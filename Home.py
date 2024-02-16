@@ -13,3 +13,26 @@ content = ("ChatGPT blob: Innovation meets excellence in every endeavor. As a pi
            "comprehensive suite of services and discover how we can catalyze your success today.")
 st.write(content)
 st.markdown("***")  # Break line
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.button("Pay", key="Pay", use_container_width=True)
+with col2:
+    st.button("Login", key="Login", use_container_width=True)
+with col3:
+    st.button("Logout", key="Logout", use_container_width=True)
+
+st.markdown("***")  # Break line
+
+with st.expander("FAQ"):
+    st.write("""
+    1. How do I use this website?\n
+            By clicking on different buttons.
+            
+    2. When can I make a payment?\n
+            Whenever you want to.
+        
+    3. How was this website built?\n
+            Hard work and dedication.
+    """)
